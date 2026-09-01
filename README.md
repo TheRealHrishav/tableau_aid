@@ -68,6 +68,7 @@ report = field_report(df)
 | `extractor.py` | Unzips a `.twbx` and parses the inner `.twb` XML into calculated / non-calculated field records. |
 | `grapher.py` | Builds the dependency DAG from field formulas, and orchestrates translation + tiered SQL generation. |
 | `transpiler.py` | Grammar (via `lark`) and transformer that translate a single Tableau formula string into a Presto SQL expression. |
+| `layout.py` | Builds a source-to-target mapping for fields in a `.twbx` file. |
 | `replace.py` | Rewrites a `.twb`'s calculation metadata to replace/remap calculated fields in place, repackaging into a new `.twbx`. (WIP) |
 
 ## Running tests
